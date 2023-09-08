@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: darkkhaki;
+        }
+        h1{
+            background-color: dimgray;
+            margin-bottom: 50px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            outline-width: 5px;
+            outline-style: outset;
+        }
+        .a1{
+            border: 12px solid black;
+            padding: 10px;
+        }
+        .test{  
+            background-color: burlywood;
+            height: 300px;
+            width: 300px;
+            border:10px solid black;
+            padding:10px 10px 10px 10px; /*ou padding 10px. Se você colocar um padding e 10px, todos os seus outros comandos padding serão iguais*/
+            display: flex;
+            justify-content: center;
+            margin: auto;
+        }
+        button:hover{
+            background-color: dimgray;
+        }
+    </style>
+</head>
+<body>
+     <h1> Exemplo de caixa box-level</h1>
+    <p>Páragrafos também são exemplos de box-level, mas os <a class="a1" href="#">links</a> são exemplos de caixas inline-level. Vamos ver como tudo isso funciona.</p><br><br>
+    <h1 class="test">Exemplo de caixa box-level</h1><br><br>
+    <button style=" font-size: 1em; padding: 7px; border-style: outset; border-color: aliceblue;border-radius: 7px; font-family: fantasy; box-shadow: 8px 8px 11px;"><a style="text-decoration: none; color: black; border-color: dimgray; " href="caixa02.html" >IR PARA A PRÓXIMA PÁGINA</a></button>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+        *{
+            /*height= 100*/
+        }
+        .botao2{
+            width: 190px;
+            height: 30px;
+            border-style: groove;
+            border-radius: 8px;
+        }
+        .botao{
+            background-color: aliceblue;
+            font-family: fantasy;
+            width: 190px;
+            height: 30px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            color: black;
+            border-radius: 8px;
+        }
+         body{
+            background-image: linear-gradient(to top, #E69B8C, #61413B);
+            background-attachment: fixed;
+        }
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando Gradiente</h1>
+    <p>
+        <div class="botao2">
+            <a href="cor3.html" style="text-decoration: none;">
+                <div class="botao"><p>Acessar a terceira página</p></div>
+            </a>
+        </div>
+    </p>
+</body>
+</html>

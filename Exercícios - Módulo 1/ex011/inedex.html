@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1><hr>
+    <p>Tente abrir esse site em vários dispositivos ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 700px)" srcset="imagens/imagem-pequena.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="imagens/imagem-média.png" type="image/png">
+        <img src="imagens/imagem-grande.png" alt="imagem flexível">
+    </picture><hr>
+
+    <p>O uso da tag <strong>&lt;picture&gt;</strong> juntamente com a tag <strong>&lt;source&gt;</strong>, permite fazer o uso de imagens dinâmica e flexiveis no seu site. Para o comando <strong>&lt;source&gt;</strong> deve ser selecionado a tag <strong>&lt;source:midia:type&gt;</strong> onde no type deve ser colocado o formato da imagem seja ela em: jpg,png,etc; e em midia, como o proprio nome já sugere, colocar o arquivo destinado para a mudança quando o tamanho do site for alterado.</p>
+
+    <p>Outra coisa muito importante de se citar é que a ordem de como as imagens estão destribuidas no código. Caso uma imagem com uma <strong>resolução menor</strong> estiver abaixo de uma imagme de <strong>resolução maior</strong>, o de <strong>resolução menor</strong> não vai funcionar.</p><hr>
+
+    <!--Reproduzindo áudio-->
+    <h1>Reproduzindo áudio</h1><hr>
+
+    <p>Vamos reproduzir áudios em HTML5!</p>
+    <audio src="midia/A Walk Into Space - Topher Mohr and Alex Elena.mp3" controls></audio>
+    <p>A alguns formatos de áudio que simplesmente não são compativeis com alguns dispositivos, então caso não queira ficar enganchado em algum áudio que não seja compativel com o dispositivo, aprenda a adaptar o seu áudio em outros formatos, como: MP3, WAV, OGG.</p>
+
+    <p>Dentro da tag <strong>&lt;audio&gt;</strong> coloque o comando <strong>controls, autoplay, loop</strong> para a reprodução do áudio.</p>
+    
+    <p>Você pode fazer da seguinte maneira, entre as<strong>&lt;audio&gt;&lt;/audio&gt;</strong>, coloque um comando <strong>&lt;source:src&gt;</strong> para poder adaptar o seu áudio a outros dispositivos, mas para isso você deve possuir o áudio em diferentes tipos de formatos.</p>
+
+    <audio controls>
+        <source src="midia/A Walk Into Space - Topher Mohr and Alex Elena.mp3" type="audio/mpeg">
+        <p>Infelizmente o seu navegador não tem compatibilidade com o áudio.<a href="midia/A Walk Into Space - Topher Mohr and Alex Elena.mp3"> Click aqui para fazer o download do arquivo mp3</a></p>
+    </audio>
+</body>
+</html>

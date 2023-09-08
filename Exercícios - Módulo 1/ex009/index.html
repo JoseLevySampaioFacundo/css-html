@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com listas</title>
+    <style>
+        body{
+            background-color: rgba(255, 145, 0, 0.795);
+        }
+    </style>
+    <link rel="shortcut icon" href="cachorro cururu.jpg" type="image/x-icon">
+</head>
+<body>
+    <h1>TRABALHANDO COM LISTAS</h1><hr>
+
+
+
+    <h2>Lista ordenada</h2>
+    <ol type="A"><!--1,A,a,I e i-->
+        <strong>
+            <em>
+                <li>acordar</li>
+                <li>tomar banho</li>
+                <li>tomar o café de manhã</li>
+                <li>escovar os dentes</li>
+            </em>
+        </strong>
+    </ol>
+    <p>o uso da tag&lt;ol&gt; faz uma lista ordenada juntamente com a atg &lt;li&gt;.</p>
+    <p>o uso do comando <abbr title="é usado para escolher o formato da sua organização. tipo: 1, i, I, a e por fim A">type=</abbr> dentro do comando&lt;ol&gt;, permite com que o tipo de enumeração mude, mas essa enumeração muda apenas se no type começar com a primeira letra do alfabeto, primeiro número natural, etc.</p>
+
+
+
+    <h2>Listas não ordenadas</h2>
+    <ul type="square"><!--square, circle disc-->
+        <li>arroz</li>
+        <li>carne</li>
+        <li>suco</li>
+        <li>caldo</li>
+    </ul>
+    <p>o uso da tag&lt;ul&gt; permite fazer uma lista sem ordenamento. O mesmo vale no <abbr title="é usado para escolher o formato da sua organização. tipo: Circle, Disc e por fim Square">type</abbr> e <ins>li</ins> sitados anteriormente.</p>
+
+
+
+    <h2>Juntando listas versão 1.0</h2>
+    <ol>
+        <li>Novas</li > <!--o comando pode prosseguir de maneira ordenada indicando a numeração de onde queira que prosigua.-->
+        <ol type="A">
+        <li>php</li>
+        <li>python</li>
+        <li>javasript</li>
+        <li>kotlin</li>
+        </ol>
+        <li>Antigas</li>
+        <ol type="A" start="5">
+        <li>clipper</li>
+        <li>fortran</li>
+        <li>delphi</li> 
+        </ol>
+    </ol>
+    <p>No caso a seguir foi utilizado uma lista dentro de outra lista no caso dos elementos dentro das listas elas estão em ordenamento ou seja <strong>&lt;ol&gt;</strong>. Por outro lado, pode perceber que os elementos dentro de cada lista estão seguindo a ordem alfabetica das lestras, isso ocorre porque dentro da tag <strong>&lt;ol&gt;</strong> de ab ertura foi colocado o complemento <strong>start=</strong>, assim basta eu colocar apartir de qual elemento eu quero começar.</p>
+
+   
+
+    <h2>Lista de definições</h2>
+    <dt>Termo</dt>
+    <dd>descrição</dd><br>
+    <p> &lt;dt&gt; determina o termo e o &lt;dd&gt; determina a descrição.</p>
+</body>
+</html>

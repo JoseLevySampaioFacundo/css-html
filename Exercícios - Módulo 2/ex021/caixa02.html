@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: cadetblue;
+            margin: 0px;
+        }
+        header{
+            width: 600px;
+            background-color: aliceblue;
+            padding: 10px;
+            margin: 10px;
+        }
+        main{
+            background-color: aliceblue;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 8px;
+        }
+        footer{
+            background-color: aliceblue;
+            text-align: center;
+            margin: 0px;
+        }
+        #p1{
+            margin-inline-start: -12px;
+        }
+        article{
+            background-color: darkgrey;
+        }
+        article > aside{
+            background-color: rgb(103, 101, 101);
+        }
+        nav{
+            background-color: rgb(0, 255, 255);
+            padding: 3px;
+        }
+        nav > a{
+            text-decoration: none;
+            color: black;
+            margin-right: 12px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        }
+        #h11{
+            height: 300px;
+            width: 300px;
+            background-color: aliceblue;
+            margin: auto;
+            box-shadow: 8px 8px 12px black;    
+        }
+        #h12{
+            height: 300px;
+            width: 300px;
+            background-color: aliceblue;
+            margin: auto;
+            box-shadow: inset 8px 8px 35px 2px black;
+            
+        }
+    </style>
+</head>
+<body>
+   <header>
+    <h1>meu site</h1>
+    <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </nav>
+   </header>
+   <main>
+       <section>
+
+       </section>
+       <section id="noticias">
+        <article>
+            <h2>Notícia sobre o Brasil</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id totam, neque, non eligendi molestiae dignissimos veritatis soluta veniam sed quisquam molestias illo dolor sunt et modi eos aliquam consequatur incidunt.</p>
+             <aside>
+                <p>Artigo escrito por: José Levy</p>
+             </aside>
+        </article>
+        <article>
+
+        </article>
+
+
+       </section>
+   </main>
+   <footer>
+        <p id="p1">Desenvolvido pelo  curso em vídeo</p>
+   </footer>
+   <p style="margin: 0.64px; margin-bottom: 8px;">Pode-se colocar sobras nternas e externas utilizando a tag &lt;box-shadow&gt;. Para utilizar uma sobra interna, basta colocar dentro da tag <span style="color: blueviolet;">inset</span>.</p>
+   <h1 id="h11" style="margin-bottom: 50px;">tag <span style="display: flex; justify-content: center;">EXTERNA</span></h1>
+   <h1 id="h12">tag <span style="display: flex; justify-content: center;">INTERNA</span></h1>
+   <a href="caixa03.html">PRÓXIMA PÁGINA</a>
+</body>
+</html>
