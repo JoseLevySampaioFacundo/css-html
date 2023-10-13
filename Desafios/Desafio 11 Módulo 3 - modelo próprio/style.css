@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Caveat';
+    src: url('fonte/Caveat-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: 'Cinzel';
+    src: url('fonte/Cinzel-VariableFont_wght.ttf');
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+ html, body{
+    min-width: 100%;
+ }
+ 
+h1{
+    text-align: center;
+    background-color: black;
+    padding: 50px 0px 0px 0px;
+    color: white;
+    font-size: 10vw;
+    font-family: 'Cinzel', Times, serif;
+    
+}
+
+.autor{
+    background-color: black;
+    color: white;
+    padding: 8px 0px 50px 0px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.autor > a{
+    color: white;
+    text-decoration: none;
+}
+
+.autor > a:hover{
+    text-decoration: underline;
+    transition-duration: 0.5s; 
+    color: gray;
+}
+
+#paragrafo1{
+padding: 73px 0px 73px 22px;
+width: 400px;
+font-size: 2.4rem;
+line-height: 3.5rem;
+font-family: 'Caveat',Times, serif
+}
+
+#Imagemdefundoparagrafo2{
+    background-image: url(imagemdefundoparagrafo2.jpg);
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+}
+
+#parabrafo2 > section{
+    background-color: rgba(0, 0, 0, 0.293); 
+    max-width: 500px;
+    min-width: 30%;
+    padding: 10px;
+    margin: 63px 0px 63px 0px;
+    font-size: 2.4rem;
+    line-height: 3.5rem;
+    font-family: 'Caveat',Times, serif;
+    
+}
+
+#paragrafo3{
+    padding: 73px 0px 73px 22px;
+    width: 400px;
+    font-size: 2.4rem;
+    line-height: 3.5rem; 
+    font-family: 'Caveat',Times, serif;
+}
+
+#imagemdefundoparagrafo4{
+    background-image: url(imagme\ do\ projeto\ paragrafo\ 2.jpg);
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+}
+
+
+#paragrafo4 > section{
+    background-color: rgba(0, 0, 0, 0.293); 
+    max-width: 500px;
+    min-width: 30%;
+    padding: 10px;
+    margin: 63px 0px 63px 0px;
+    font-size: 2.4rem;
+    line-height: 3.5rem;
+    display: inline-block;
+    font-family: 'Caveat',Times, serif;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+}
+
+footer > a{
+    color: white;
+    text-decoration: none;
+}
+
+footer > a:hover{
+    text-decoration: underline;
+    color: rgb(109, 159, 56);
+    transition-duration: 0.5s;
+
+}

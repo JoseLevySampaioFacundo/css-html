@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        /*Notas importantes*/
+        /*O transform serve para mexer em caixas aplicando alguma alteração de transformação nela*/
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        /* O conteiner vai ter uma posição relativa */
+
+        #conteiner{
+             position: relative;
+             height: 500px;
+             background-color: purple;
+             padding: 10px;
+             background-image: url(imagens-cap19/target001.png);
+             background-size: 100% 100%;
+        }
+        /* O conteúdo vai ter um posicionamento absoluto */
+
+        /* Apos color o posicionamento em absoluto podemos controlar o left, right, top e o bottom */
+
+        #conteudo{
+            position: absolute;
+            height: 200px;
+            background-color: yellow;
+            width: 400px;
+
+            background-image: url(imagens-cap19/target001.png);
+            background-size: 100% 100%;
+
+            left: 50%;
+            top: 50%;
+            
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <section id="conteiner">
+       <article id="conteudo">
+       </article>
+    </section>
+</body>
+</html>
